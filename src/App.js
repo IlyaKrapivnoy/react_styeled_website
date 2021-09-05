@@ -3,6 +3,8 @@ import styled, { css } from 'styled-components';
 import Intro from './components/Intro';
 import Feature from './components/Feature';
 import Service from './components/Service';
+import Footer from './components/Footer';
+import Contact from './components/Contact';
 
 const Container = styled.div`
     height: 100vh;
@@ -52,6 +54,10 @@ const App = () => {
             <Container>
                 <Service />
                 <ServiceShape />
+            </Container>
+            <Container>
+                <Contact />
+                <Footer />
             </Container>
         </>
     );
