@@ -7,7 +7,7 @@ const Container = styled.div`
     overflow: hidden;
 `;
 const IntroShape = styled.div`
-    clip-path: polygon(99% 0%, 64% 0%, 49% 59%, 68% 100%, 100% 100%);
+    clip-path: polygon(100% 0, 61% 0%, 51% 41%, 66% 99%, 100% 100%);
     background-color: crimson;
     width: 100%;
     height: 100%;

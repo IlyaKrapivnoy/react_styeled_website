@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import Guy from '../img/guy.png';
+import AnimatedShapes from './AnimatedShapes';
 
 const Container = styled.div`
     height: calc(100vh - 50px);
@@ -53,6 +54,9 @@ const ContactText = styled.span`
 `;
 const Right = styled.div`
     width: 40%;
+    position: absolute;
+    bottom: -4px;
+    right: 0;
 `;
 const Image = styled.img`
     width: 100%;
@@ -79,6 +83,7 @@ const Intro = () => {
             <Right>
                 <Image src={Guy} />
             </Right>
+            <AnimatedShapes />
         </Container>
     );
 };
