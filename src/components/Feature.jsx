@@ -1,40 +1,46 @@
 import styled from 'styled-components';
-import AppImg from '../img/app.png';
+import App from '../img/app.png';
+import AnimatedShapes from './AnimatedShapes';
 
 const Container = styled.div`
     display: flex;
-    padding: 60px 0;
 `;
+
 const Left = styled.div`
     width: 50%;
-    position: relative;
 `;
+
 const Image = styled.img`
-    width: 50%;
+    width: 30%;
     position: absolute;
-    bottom: -60px;
-    left: 0;
+    bottom: 0px;
 `;
+
 const Right = styled.div`
+    height: 100vh;
     width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 `;
+
 const Title = styled.span`
     font-size: 70px;
 `;
-const Subtitle = styled.span`
+
+const SubTitle = styled.span`
     font-size: 24px;
     font-style: italic;
     color: #333;
     margin-top: 30px;
 `;
-const Description = styled.p`
+
+const Desc = styled.p`
     font-size: 20px;
     color: #777;
     margin-top: 30px;
 `;
+
 const Button = styled.button`
     width: 150px;
     border: none;
@@ -51,7 +57,7 @@ const Feature = () => {
     return (
         <Container>
             <Left>
-                <Image src={AppImg} />
+                <Image src={App} />
             </Left>
             <Right>
                 <Title>
@@ -59,20 +65,21 @@ const Feature = () => {
                     <br />
                     <b>good</b> business
                 </Title>
-                <Subtitle>
+                <SubTitle>
                     We know that good design means good business.
-                </Subtitle>
-                <Description>
+                </SubTitle>
+                <Desc>
                     We help our clients succeed by creating brand identities,
                     digital experiences, and print materials that communicate
                     clearly, achieve marketing goals, and look fantastic.
-                </Description>
-                <Description>
+                </Desc>
+                <Desc>
                     We care your business and guarantee you to achieve marketing
                     goals.
-                </Description>
+                </Desc>
                 <Button>Learn More</Button>
             </Right>
+            <AnimatedShapes />
         </Container>
     );
 };

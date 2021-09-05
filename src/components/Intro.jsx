@@ -7,6 +7,7 @@ const Container = styled.div`
     display: flex;
     padding: 20px;
 `;
+
 const Left = styled.div`
     width: 60%;
     display: flex;
@@ -14,15 +15,18 @@ const Left = styled.div`
     align-items: center;
     justify-content: center;
 `;
+
 const Title = styled.h1`
     width: 60%;
     font-size: 60px;
 `;
+
 const Desc = styled.p`
     width: 60%;
     font-size: 20px;
     margin-top: 20px;
 `;
+
 const Info = styled.div`
     width: 60%;
     margin-top: 50px;
@@ -30,47 +34,52 @@ const Info = styled.div`
     align-items: center;
     justify-content: space-between;
 `;
+
 const Button = styled.button`
-    border: none;
     padding: 15px;
-    background-color: crimson;
-    color: #fff;
-    font-weight: bold;
+    background-color: darkblue;
+    color: white;
     border-radius: 10px;
-    cursor: pointer;
+    font-weight: bold;
+    border: none;
     letter-spacing: 2px;
+    cursor: pointer;
 `;
+
 const Contact = styled.div`
     display: flex;
     flex-direction: column;
 `;
+
 const Phone = styled.span`
     color: #f0667d;
     font-weight: bold;
-    margin-bottom: 10px;
 `;
+
 const ContactText = styled.span`
     color: gray;
+    margin-top: 5px;
 `;
+
 const Right = styled.div`
     width: 40%;
-    position: absolute;
-    bottom: -4px;
-    right: 0;
 `;
+
 const Image = styled.img`
-    width: 100%;
+    width: 40%;
+    position: absolute;
+    bottom: 0;
 `;
 
 const Intro = () => {
     return (
         <Container>
             <Left>
-                <Title>Adventure in creative age</Title>
+                <Title>Adventures in creative age</Title>
                 <Desc>
                     We believe that designing products and services in close
                     partnership with our clients is the only way to have a real
-                    impact on their business.{' '}
+                    impact on their business.
                 </Desc>
                 <Info>
                     <Button>START A PROJECT</Button>

@@ -8,32 +8,35 @@ const Container = styled.div`
     overflow: hidden;
     position: relative;
 `;
+
 const Shape = css`
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
-    right: 0;
+    left: 0;
     z-index: -1;
 `;
-const IntroShape = styled.div`
+
+const IntoShape = styled.div`
     ${Shape}
-    clip-path: polygon(100% 0, 61% 0%, 51% 41%, 66% 99%, 100% 100%);
+    clip-path: polygon(67% 0, 100% 0%, 100% 100%, 55% 100%);
     background-color: crimson;
 `;
+
 const FeatureShape = styled.div`
     ${Shape}
-    clip-path: polygon(0 0, 75% 0%, 33% 100%, 0 100%);
+    clip-path: polygon(0 0, 55% 0%, 33% 100%, 0 100%);
     background-color: pink;
 `;
 
-function App() {
+const App = () => {
     return (
         <>
             <Container>
                 <Navbar />
                 <Intro />
-                <IntroShape />
+                <IntoShape />
             </Container>
             <Container>
                 <Feature />
@@ -41,6 +44,6 @@ function App() {
             </Container>
         </>
     );
-}
+};
 
 export default App;
