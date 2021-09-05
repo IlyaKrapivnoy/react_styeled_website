@@ -6,12 +6,23 @@ const Container = styled.div`
     height: 100vh;
     overflow: hidden;
 `;
+const IntroShape = styled.div`
+    clip-path: polygon(99% 0%, 64% 0%, 49% 59%, 68% 100%, 100% 100%);
+    background-color: crimson;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+`;
 
 function App() {
     return (
         <Container>
             <Navbar />
             <Intro />
+            <IntroShape />
         </Container>
     );
 }
