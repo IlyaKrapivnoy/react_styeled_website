@@ -3,7 +3,6 @@ import AppImg from '../img/app.png';
 
 const Container = styled.div`
     display: flex;
-    background-color: red;
     padding: 60px 0;
 `;
 const Left = styled.div`
